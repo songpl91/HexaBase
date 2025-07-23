@@ -56,17 +56,24 @@
     <Compile Include="Assets\Scripts\TestExample\HexPrefabCreator.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Utils\HexOptimization.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexGridEditorExample.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexAngleExample.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Utils\HexDebugger.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexAngleTestSetup.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Coordinates\AxialCoordinate.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\HexCoordinateManager.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Coordinates\OffsetCoordinate.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexAngleUIVisualizer.cs" />
     <Compile Include="Assets\Scripts\TestExample\HexagonSystemExample.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexAngleVisualizer.cs" />
     <Compile Include="Assets\Scripts\TestExample\HexCoordinateSystemsGuide.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Core\IHexCoordinate.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\SimpleAngleTest.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Coordinates\DoubledCoordinate.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Utils\HexAngleCalculator.cs" />
     <Compile Include="Assets\Scripts\TestExample\OptimizedHexNeighborSystem.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexCoordinateExample.cs" />
+    <Compile Include="Assets\Scripts\HexCoordinateSystem\Examples\HexAlignmentTest.cs" />
     <Compile Include="Assets\Scripts\HexCoordinateSystem\Core\HexConstants.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files\2022.3.37f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

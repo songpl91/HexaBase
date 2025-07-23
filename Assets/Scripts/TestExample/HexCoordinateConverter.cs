@@ -704,15 +704,17 @@ namespace HexagonSystem
         }
 
         /// <summary>
-        /// 绘制单个六边形
+        /// 绘制单个六边形（边对齐/平顶六边形）
         /// </summary>
         public static void DrawHexagon(Vector3 center, float size)
         {
             var vertices = new Vector3[7]; // 6个顶点 + 回到起点
             
+            // 边对齐六边形：第一个顶点在30度角（右上方）
+            // 这样顶部和底部的边是水平的
             for (int i = 0; i < 6; i++)
             {
-                float angle = i * 60f * Mathf.Deg2Rad;
+                float angle = (i * 60f + 30f) * Mathf.Deg2Rad; // 加30度偏移实现边对齐
                 vertices[i] = center + new Vector3(
                     size * Mathf.Cos(angle),
                     size * Mathf.Sin(angle),

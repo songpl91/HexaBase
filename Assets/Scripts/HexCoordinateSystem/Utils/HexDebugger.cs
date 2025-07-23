@@ -330,7 +330,7 @@ namespace HexCoordinateSystem.Utils
         }
         
         /// <summary>
-        /// 在Scene视图中绘制单个六边形
+        /// 在Scene视图中绘制单个六边形（边对齐/平顶六边形）
         /// </summary>
         /// <param name="center">中心世界坐标</param>
         /// <param name="size">大小</param>
@@ -341,9 +341,11 @@ namespace HexCoordinateSystem.Utils
             Gizmos.color = color;
             
             Vector3[] vertices = new Vector3[6];
+            // 边对齐六边形：第一个顶点在30度角（右上方）
+            // 这样顶部和底部的边是水平的
             for (int i = 0; i < 6; i++)
             {
-                float angle = 60 * i * Mathf.Deg2Rad;
+                float angle = (60 * i + 30) * Mathf.Deg2Rad; // 加30度偏移实现边对齐
                 vertices[i] = center + new Vector3(
                     size * Mathf.Cos(angle),
                     0,

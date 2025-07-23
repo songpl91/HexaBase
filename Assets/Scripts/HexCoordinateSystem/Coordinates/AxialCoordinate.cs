@@ -70,7 +70,7 @@ namespace HexCoordinateSystem.Coordinates
         /// <returns>世界坐标位置</returns>
         public Vector3 ToWorldPosition(float hexSize = 1.0f)
         {
-            return ToWorldPosition(HexConstants.POINTY_TOP_LAYOUT, hexSize);
+            return ToWorldPosition(HexConstants.FLAT_TOP_LAYOUT, hexSize);
         }
         
         /// <summary>
