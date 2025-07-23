@@ -174,7 +174,7 @@ namespace HexCoordinateSystem.Examples
             // 这样顶部和底部的边是水平的
             for (int i = 0; i < 6; i++)
             {
-                float angle = i * 60f * Mathf.Deg2Rad; // 加30度偏移实现边对齐
+                float angle = (i * 60f + 30) * Mathf.Deg2Rad; // 加30度偏移实现边对齐
                 vertices[i] = center + new Vector3(
                     Mathf.Cos(angle) * size,
                     Mathf.Sin(angle) * size,
